@@ -1,0 +1,55 @@
+body {
+    font-size: 14px;
+}
+
+.modal-opens{
+    display: flex;
+}
+
+@for $i from 0 through 2 {
+    #open#{$i},
+    #close#{$i} {
+        cursor: pointer;
+        width: 200px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        text-align: center;
+        padding: 12px 0;
+        margin: 16px auto 0;
+    }
+
+    #mask#{$i} {
+        background: rgba(0, 0, 0, 0.4);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+        &.hidden {
+            display: none;
+        }
+    }
+
+    #modal#{$i} {
+        background: #fff;
+        width: 300px;
+        padding: 20px;
+        border-radius: 4px;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: 2;
+        transition: transform 0.4s;
+
+        &.hidden {
+            transform: translateY(-500px);
+        }
+
+        p {
+            margin: 0 0 20px;
+        }
+    }
+}

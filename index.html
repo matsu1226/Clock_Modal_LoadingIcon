@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock & Modal</title>
+    <link rel="stylesheet" href="css/modal.css">
+    <style>
+        canvas {
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas width="300" height="260"></canvas>
+    <div id="bodyWrapper" style="display: none;">
+        <div class="modal-opens">
+            <div id="open0">
+                松田を160文字で表すと？
+            </div>
+
+            <div id="open1">
+                前職は？
+            </div>
+
+            <div id="open2">
+                出身地は？
+            </div>
+        </div>
+
+
+
+        <div id="mask0" class="hidden"></div>
+        <section id="modal0" class="hidden">
+            <p>元幹部役職向けのヘッドハンターで、元機械系エンジニア。家族は妻とデグー2匹(21年10月に第1子)。関心事→ #キャリアデザイン #サドベリースクール #幸福度追求 #地方創生 #北海道 #夫婦愛
+                #21世紀型百姓 #VanLife #デグー #メディアアート #瞑想 #株式投資
+                <a href="https://twitter.com/SHOMATSUDA3">https://twitter.com/SHOMATSUDA3</a>
+
+            </p>
+            <div id="close0">閉じる</div>
+        </section>
+
+        <div id="mask1" class="hidden"></div>
+        <section id="modal1" class="hidden">
+            <p>パーソルキャリア株式会社エグゼクティブエージェント事業部です。
+                <br>「パーソルキャリア エグゼクティブ
+                エージェント」は、パーソルキャリアの中でエグゼクティブ・スペシャリスト層に特化した人材紹介サービスを提供しています。具体的には、社長候補、役員、部長等のエグゼクティブ層と、エンジニアや士業等の専門職・技術職のスペシャリスト層のポジションを取り扱っています。
+                <a href="https://executive-agt.jp/">https://executive-agt.jp/</a>
+            </p>
+            <div id="close1">閉じる</div>
+        </section>
+
+        <div id="mask2" class="hidden"></div>
+        <section id="modal2" class="hidden">
+            <p>札幌市です
+                <br>札幌市（さっぽろし）は、北海道の道央地方に位置し、石狩振興局に属する市。道庁所在地にして石狩振興局所在地であり、道庁所在地であることから「道都」とも呼ばれ[1]、政治・経済・文化の中心地。北海道最大の人口（約197万人）を有する政令指定都市である。
+                <a href="https://www.city.sapporo.jp/">https://www.city.sapporo.jp/</a>
+            </p>
+            <div id="close2">閉じる</div>
+        </section>
+
+        <canvas width="300" height="260">
+            canvas not supported.
+        </canvas>
+    </div>
+    <script src="js/loadingIcon.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+
+</html>
