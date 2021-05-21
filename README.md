@@ -1,0 +1,2 @@
+# Clock_Modal_LoadingIcon
+JavaScriptの練習です
